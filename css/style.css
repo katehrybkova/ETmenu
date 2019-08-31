@@ -74,6 +74,9 @@ main {
 .mainList a:hover {
   color: #ff5c29;
 }
+.menuBlock li{
+  cursor: pointer;
+}
 
 /* ------------------------- */
 
