@@ -18,9 +18,10 @@
   color: white;
   padding: 25px 0;
   width: 400px;
-  transition: 1s;
   position: absolute;
-  transform: translateX(-100%);
+  left: -400px;
+  transition: 1s;
+
 }
 
 .menuBlock h3 {
@@ -104,14 +105,10 @@ main {
 /* ------------------------- */
 
 #idishka:checked~.menuBlock {
-  /* display: block; */
-  transform: translateX(0)
+  left: 0;
+
 }
 
-#idishka:checked~.menuBlock {
-  /* display: block; */
-  transform: translateX(0)
-}
 
 .inline {
   width: 15%;
