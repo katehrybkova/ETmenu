@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Roboto";
 }
+.categorie {
+  display: flex;
+  justify-content: space-between;
+}
 
 .flex {
   display: flex;
@@ -21,7 +25,6 @@
   position: absolute;
   left: -400px;
   transition: 1s;
-
 }
 
 .menuBlock h3 {
@@ -34,7 +37,8 @@
   list-style: none;
 }
 .mainList:first-child {
-border-top:  1px #464646 solid;}
+  border-top: 1px #464646 solid;
+}
 
 .menuBlock ul ul {
   margin-left: 15px;
@@ -62,6 +66,10 @@ main {
   border-bottom: 1px #464646 solid;
   padding: 5px 25px;
   cursor: pointer;
+  justify-content: space-between;
+}
+.mainList li li {
+  padding: 5px 0;
 }
 
 .mainList li:hover {
@@ -71,11 +79,6 @@ main {
 
 .subList {
   display: none;
-}
-
-.mainList li:hover .subList {
-  display: block;
-  color: white;
 }
 
 .thirdList {
@@ -98,17 +101,31 @@ main {
 .mainList a:hover {
   color: #ff5c29;
 }
-.menuBlock li{
+.menuBlock li {
   cursor: pointer;
 }
 
 /* ------------------------- */
 
-#idishka:checked~.menuBlock {
-  left: 0;
-
+#china:checked ~ .subList,
+#science:checked ~ .subList,
+#aroundWorld:checked ~ .subList,
+#culture:checked ~ .subList,
+#archive:checked ~ .subList,
+#world:checked ~ .subList,
+#russia:checked ~ .subList,
+#moscow:checked ~ .subList,
+#opinion:checked ~ .subList,
+#fashion:checked ~ .subList,
+#sport:checked ~ .subList,
+#video:checked ~ .subList,
+#health:checked ~ .subList,
+#aboutAll:checked ~ .subList {
+  display: block;
 }
-
+#idishka:checked ~ .menuBlock {
+  left: 0;
+}
 
 .inline {
   width: 15%;
@@ -124,10 +141,15 @@ main {
   top: 20px;
   left: 25px;
   transition: 1s;
-
+}
+.categorieLabel {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#idishka:checked~.inline {
+#idishka:checked ~ .inline {
   background-image: url(../images/close.svg);
   background-size: contain;
   background-position: center center;
@@ -139,8 +161,25 @@ main {
   left: 350px;
 }
 
-
-#idishka {
+#idishka,
+#inspiration,
+#china,
+#culture,
+#science,
+#aroundWorld,
+#archive,
+#world,
+#russia,
+#moscow,
+#opinion,
+#fashion,
+#sport,
+#video,
+#health,
+#aboutAll {
   display: none;
   width: 20%;
+}
+i {
+  padding-bottom: 3px;
 }
