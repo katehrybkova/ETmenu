@@ -18,23 +18,61 @@
       <label for="idishka" class="inline"> </label>
 
       <div class="menuBlock">
-        <h3>ET на других языках</h3>
+        <div>
+          <div class="langBox">
+            <input type="checkbox" id="lang" />
+            <label for="lang" class="langLabel">
+              ET на других языках
+            </label>
+            <div class="langFlex">
+              <ul class="secList">
+                <li><a href="#"> Английский </a></li>
+                <li><a href="#">Болгарский</a></li>
+                <li><a href="#">Вьетнамский</a></li>
+                <li><a href="#">Иврит</a></li>
+                <li><a href="#">Индонезийский</a></li>
+                <li><a href="#">Испанский</a></li>
+                <li><a href="#">Итальянский</a></li>
+                <li><a href="#">Китайский</a></li>
+                <li><a href="#">Корейский</a></li>
+                <li><a href="#">Немецкий</a></li>
+              </ul>
+              <div class=" borderList"></div>
+              <ul class="secList">
+                <li><a href="#">Персидский</a></li>
+                <li><a href="#">Португальский</a></li>
+                <li><a href="#">Румынский</a></li>
+                <li><a href="#">Словацкий</a></li>
+                <li><a href="#">Турецкий</a></li>
+                <li><a href="#">Украинский</a></li>
+                <li><a href="#">Французкий</a></li>
+                <li><a href="#">Чешский</a></li>
+                <li><a href="#">Шведский</a></li>
+                <li><a href="#">Японский</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <ul class="mainList">
           <li>
-            <div class="categorie">
+            <div class="categorie link">
               <a href="#">ВДОХНОВЕНИЕ</a>
             </div>
           </li>
-
           <li>
-            <div class="categorie">
-              <label for="china" class="categorieLabel">
-                <p>КИТАЙ</p>
-                <i class="fa fa-sort-asc fa-rotate-180 " aria-hidden="true"></i>
-              </label>
-            </div>
             <input type="checkbox" id="china" />
-            <ul class="subList">
+            <label for="china" class="categorieLabel">
+              КИТАЙ
+            </label>
+            <div class="arrow">
+              <img
+                src="./images/drop-down-arrow.svg"
+                width="10px"
+                alt="arrow"
+                class="fan"
+              />
+            </div>
+            <ul class="subList secList">
               <li><a href="#"> Политика Китая</a></li>
               <li><a href="#">Экономика Китая</a></li>
               <li><a href="#">Природнве и техногенные катастрофы</a></li>
@@ -45,22 +83,26 @@
               <li><a href="#">Традиционная культура</a></li>
             </ul>
           </li>
-
           <li>
-            <div class="categorie">
+            <div class="categorie link">
               <a href="#">ЖИЗНЬ</a>
             </div>
           </li>
-
           <li>
-            <div class="categorie">
-              <label for="culture" class="categorieLabel">
-                <p>КУЛЬТУРА И ИСКУССТВО</p>
-                <i class="fa fa-sort-asc fa-rotate-180 " aria-hidden="true"></i>
-              </label>
-            </div>
+            <label for="culture" class="categorieLabel">
+              КУЛЬТУРА И ИСКУССТВО
+            </label>
             <input type="checkbox" id="culture" />
-            <ul class="subList">
+            <div class="arrow">
+              <img
+                src="./images/drop-down-arrow.svg"
+                width="10px"
+                alt="arrow"
+                class="fan"
+              />
+            </div>
+
+            <ul class="subList secList">
               <li><a href="#">Новости культуры</a></li>
               <li><a href="#">Знаменитости</a></li>
               <li><a href="#">Искусство</a></li>
@@ -71,14 +113,20 @@
           </li>
 
           <li>
-            <div class="categorie">
-              <label for="science" class="categorieLabel">
-                <p>НАУКА И ТЕХНОЛОГИИ</p>
-                <i class="fa fa-sort-asc fa-rotate-180 " aria-hidden="true"></i>
-              </label>
-            </div>
+            <label for="science" class="categorieLabel">
+              НАУКА И ТЕХНОЛОГИИ
+            </label>
             <input type="checkbox" id="science" />
-            <ul class="subList">
+            <div class="arrow">
+              <img
+                src="./images/drop-down-arrow.svg"
+                width="10px"
+                alt="arrow"
+                class="fan"
+              />
+            </div>
+
+            <ul class="subList secList">
               <li><a href="#">Новости науки</a></li>
               <li><a href="#">Окружающая среда</a></li>
               <li><a href="#">За гранью науки</a></li>
@@ -88,14 +136,20 @@
           </li>
 
           <li>
-            <div class="categorie">
-              <label for="aroundWorld" class="categorieLabel">
-                <p>ВОКРУГ СВЕТА</p>
-                <i class="fa fa-sort-asc fa-rotate-180 " aria-hidden="true"></i>
-              </label>
-            </div>
+            <label for="aroundWorld" class="categorieLabel">
+              ВОКРУГ СВЕТА
+            </label>
             <input type="checkbox" id="aroundWorld" />
-            <ul class="subList">
+            <div class="arrow">
+              <img
+                src="./images/drop-down-arrow.svg"
+                width="10px"
+                alt="arrow"
+                class="fan"
+              />
+            </div>
+
+            <ul class="subList secList">
               <li><a href="#">Новости туризма</a></li>
               <li><a href="#">Туризм и отдых</a></li>
               <li><a href="#">Достопримечательности</a></li>
@@ -104,23 +158,34 @@
           </li>
 
           <li>
-            <div class="categorie">
-              <label for="archive" class="categorieLabel">
-                <p>АРХИВ</p>
-                <i class="fa fa-sort-asc fa-rotate-180 " aria-hidden="true"></i
-              ></label>
-            </div>
+            <label for="archive" class="categorieLabel">
+              АРХИВ
+            </label>
             <input type="checkbox" id="archive" />
-            <ul class="subList">
+            <div class="arrow">
+              <img
+                src="./images/drop-down-arrow.svg"
+                width="10px"
+                alt="arrow"
+                class="fan"
+              />
+            </div>
+
+            <ul class="subList archiveList">
               <li>
                 <label for="world" class="categorieLabel">
-                  <p>МИР</p>
-                  <i
-                    class="fa fa-sort-asc fa-rotate-180 "
-                    aria-hidden="true"
-                  ></i>
+                  МИР
                 </label>
                 <input type="checkbox" id="world" />
+                <div class="arrow">
+                  <img
+                    src="./images/drop-down-arrow.svg"
+                    width="10px"
+                    alt="arrow"
+                    class="fan"
+                  />
+                </div>
+
                 <ul class="subList">
                   <li><a href="#"> Европа</a></li>
                   <li><a href="#"> Украина</a></li>
@@ -134,14 +199,18 @@
               </li>
               <li>
                 <label for="russia" class="categorieLabel">
-                  <p>РОССИЯ</p>
-                  <i
-                    class="fa fa-sort-asc fa-rotate-180 "
-                    aria-hidden="true"
-                  ></i
-                ></label>
-
+                  РОССИЯ
+                </label>
                 <input type="checkbox" id="russia" />
+                <div class="arrow">
+                  <img
+                    src="./images/drop-down-arrow.svg"
+                    width="10px"
+                    alt="arrow"
+                    class="fan"
+                  />
+                </div>
+
                 <ul class="subList">
                   <li><a href="#"> Политика России</a></li>
                   <li><a href="#"> Экономика России</a></li>
@@ -150,14 +219,18 @@
               </li>
               <li>
                 <label for="moscow" class="categorieLabel">
-                  <p>МОСКВА</p>
-                  <i
-                    class="fa fa-sort-asc fa-rotate-180 "
-                    aria-hidden="true"
-                  ></i
-                ></label>
-
+                  МОСКВА
+                </label>
                 <input type="checkbox" id="moscow" />
+                <div class="arrow">
+                  <img
+                    src="./images/drop-down-arrow.svg"
+                    width="10px"
+                    alt="arrow"
+                    class="fan"
+                  />
+                </div>
+
                 <ul class="subList">
                   <li>Отдых в Москве</li>
                   <li>Происшествия в Москве</li>
@@ -165,14 +238,17 @@
               </li>
               <li>
                 <label for="opinion" class="categorieLabel">
-                  <p>МНЕНИЕ</p>
-                  <i
-                    class="fa fa-sort-asc fa-rotate-180 "
-                    aria-hidden="true"
-                  ></i
-                ></label>
-
+                  МНЕНИЕ
+                </label>
                 <input type="checkbox" id="opinion" />
+                <div class="arrow">
+                  <img
+                    src="./images/drop-down-arrow.svg"
+                    width="10px"
+                    alt="arrow"
+                    class="fan"
+                  />
+                </div>
                 <ul class="subList">
                   <li><a href="#">Интервью</a></li>
                   <li><a href="#">Точка зрения</a></li>
@@ -181,14 +257,17 @@
               </li>
               <li>
                 <label for="fashion" class="categorieLabel">
-                  <p>МОДА</p>
-                  <i
-                    class="fa fa-sort-asc fa-rotate-180 "
-                    aria-hidden="true"
-                  ></i
-                ></label>
-
+                  МОДА
+                </label>
                 <input type="checkbox" id="fashion" />
+                <div class="arrow">
+                  <img
+                    src="./images/drop-down-arrow.svg"
+                    width="10px"
+                    alt="arrow"
+                    class="fan"
+                  />
+                </div>
                 <ul class="subList">
                   <li><a href="#">Новости моды</a></li>
                   <li><a href="#">Тренды</a></li>
@@ -197,14 +276,18 @@
               </li>
               <li>
                 <label for="sport" class="categorieLabel">
-                  <p>СПОРТ</p>
-                  <i
-                    class="fa fa-sort-asc fa-rotate-180 "
-                    aria-hidden="true"
-                  ></i
-                ></label>
-
+                  СПОРТ
+                </label>
                 <input type="checkbox" id="sport" />
+                <div class="arrow">
+                  <img
+                    src="./images/drop-down-arrow.svg"
+                    width="10px"
+                    alt="arrow"
+                    class="fan"
+                  />
+                </div>
+
                 <ul class="subList">
                   <li><a href="#">Новости спорта</a></li>
                   <li><a href="#">Новости футбола</a></li>
@@ -216,14 +299,18 @@
               <li>ИСТОРИЯ КОММУНИЗМА</li>
               <li>
                 <label for="video" class="categorieLabel">
-                  <p>ВИДЕО</p>
-                  <i
-                    class="fa fa-sort-asc fa-rotate-180 "
-                    aria-hidden="true"
-                  ></i
-                ></label>
-
+                  ВИДЕО
+                </label>
                 <input type="checkbox" id="video" />
+                <div class="arrow">
+                  <img
+                    src="./images/drop-down-arrow.svg"
+                    width="10px"
+                    alt="arrow"
+                    class="fan"
+                  />
+                </div>
+
                 <ul class="subList">
                   <li><a href="#">О разном</a></li>
                   <li><a href="#">Забавные животные</a></li>
@@ -234,13 +321,17 @@
               <li>
                 <label for="health" class="categorieLabel">
                   <p>ЗДОРОВЬЕ</p>
-                  <i
-                    class="fa fa-sort-asc fa-rotate-180 "
-                    aria-hidden="true"
-                  ></i
-                ></label>
-
+                </label>
                 <input type="checkbox" id="health" />
+                <div class="arrow">
+                  <img
+                    src="./images/drop-down-arrow.svg"
+                    width="10px"
+                    alt="arrow"
+                    class="fan"
+                  />
+                </div>
+
                 <ul class="subList">
                   <li><a href="#"> Образ жизни</a></li>
                   <li><a href="#"> Правильное питание</a></li>
@@ -252,13 +343,16 @@
               <li>
                 <label for="aboutAll" class="categorieLabel">
                   <p>ОБО ВСЁМ ПОНЕМНОГУ</p>
-                  <i
-                    class="fa fa-sort-asc fa-rotate-180 "
-                    aria-hidden="true"
-                  ></i>
                 </label>
-
                 <input type="checkbox" id="aboutAll" />
+                <div class="arrow">
+                  <img
+                    src="./images/drop-down-arrow.svg"
+                    width="10px"
+                    alt="arrow"
+                    class="fan"
+                  />
+                </div>
                 <ul class="subList">
                   <li><a href="#">Семья</a></li>
                   <li><a href="#">Дом</a></li>
@@ -266,7 +360,7 @@
                   <li><a href="#">Авто</a></li>
                   <li><a href="#">Интересные факты</a></li>
                   <li><a href="#">Товары и услуг</a></li>
-                  <li><a href="#">Образование и карьера</a></li>
+                  <li class="link"><a href="#">Образование и карьера</a></li>
                 </ul>
               </li>
             </ul>

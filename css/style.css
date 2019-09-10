@@ -18,7 +18,7 @@
 
 .menuBlock {
   background-color: #35393b;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   padding: 25px 0;
   width: 400px;
@@ -26,11 +26,15 @@
   left: -400px;
   transition: 1s;
 }
-
-.menuBlock h3 {
-  color: #ff5c29;
+.langBox{
   margin-bottom: 25px;
-  margin-left: 25px;
+  padding-left: 20px; 
+}
+
+.langLabel{
+  color: #ff5c29;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .menuBlock ul {
@@ -48,11 +52,6 @@
   border: none;
 }
 
-.mainBlock {
-  width: 100%;
-  background-color: rgb(212, 0, 255);
-}
-
 header {
   background-color: rgb(4, 0, 255);
   height: 60px;
@@ -64,12 +63,9 @@ main {
 
 .mainList li {
   border-bottom: 1px #464646 solid;
-  padding: 5px 25px;
+  padding: 0 15px 0 20px;
   cursor: pointer;
   justify-content: space-between;
-}
-.mainList li li {
-  padding: 5px 0;
 }
 
 .mainList li:hover {
@@ -93,12 +89,13 @@ main {
   color: white;
 }
 
-.mainList a {
+.mainList a, .langBox a {
   text-decoration: none;
   color: white;
 }
 
-.mainList a:hover {
+.mainList a:hover,
+.langBox a:hover{
   color: #ff5c29;
 }
 .menuBlock li {
@@ -123,10 +120,20 @@ main {
 #aboutAll:checked ~ .subList {
   display: block;
 }
+#lang:checked ~ .langFlex{
+display: flex;
+justify-content: space-around;
+}
+.langFlex{
+  padding:20px 50px 0 0 ;
+  display: none;
+}
+.borderList{
+  border-right:  1px #464646 solid;
+}
 #idishka:checked ~ .menuBlock {
   left: 0;
 }
-
 .inline {
   width: 15%;
   display: inline-block;
@@ -176,6 +183,7 @@ main {
 #sport,
 #video,
 #health,
+#lang,
 #aboutAll {
   display: none;
   width: 20%;
@@ -183,3 +191,42 @@ main {
 i {
   padding-bottom: 3px;
 }
+#china:checked ~ .arrow,
+#inspiration:checked ~ .arrow,
+#culture:checked ~ .arrow,
+#science:checked ~ .arrow,
+#aroundWorld:checked ~ .arrow,
+#archive:checked ~ .arrow,
+#world:checked ~ .arrow,
+#russia:checked ~ .arrow,
+#moscow:checked ~ .arrow,
+#opinion:checked ~ .arrow,
+#fashion:checked ~ .arrow,
+#sport:checked ~ .arrow,
+#video:checked ~ .arrow,
+#health:checked ~ .arrow,
+#aboutAll:checked ~ .arrow {
+  transform: rotate(180deg);
+}
+.mainList label {
+  display: inline-block;
+  width: 92%;
+  padding: 5px 0;
+}
+.mainList .arrow {
+  display: inline-block;
+  width: 3%;
+}
+.subList li li {
+  padding: 5px 0;
+}
+.link {
+  padding: 5px 0;
+}
+.secList li {
+  padding: 5px 0;
+}
+.archiveList li{
+  padding: 0 
+}
+
