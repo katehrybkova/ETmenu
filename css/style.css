@@ -26,12 +26,12 @@
   left: -400px;
   transition: 1s;
 }
-.langBox{
+.langBox {
   margin-bottom: 25px;
-  padding-left: 20px; 
+  padding-left: 20px;
 }
 
-.langLabel{
+.langLabel {
   color: #ff5c29;
   font-size: 18px;
   cursor: pointer;
@@ -89,13 +89,14 @@ main {
   color: white;
 }
 
-.mainList a, .langBox a {
+.mainList a,
+.langBox a {
   text-decoration: none;
   color: white;
 }
 
 .mainList a:hover,
-.langBox a:hover{
+.langBox a:hover {
   color: #ff5c29;
 }
 .menuBlock li {
@@ -120,16 +121,16 @@ main {
 #aboutAll:checked ~ .subList {
   display: block;
 }
-#lang:checked ~ .langFlex{
-display: flex;
-justify-content: space-around;
+#lang:checked ~ .langFlex {
+  display: flex;
+  justify-content: space-around;
 }
-.langFlex{
-  padding:20px 50px 0 0 ;
+.langFlex {
+  padding: 20px 50px 0 0;
   display: none;
 }
-.borderList{
-  border-right:  1px #464646 solid;
+.borderList {
+  border-right: 1px #464646 solid;
 }
 #idishka:checked ~ .menuBlock {
   left: 0;
@@ -148,12 +149,6 @@ justify-content: space-around;
   top: 20px;
   left: 25px;
   transition: 1s;
-}
-.categorieLabel {
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 #idishka:checked ~ .inline {
@@ -191,32 +186,30 @@ justify-content: space-around;
 i {
   padding-bottom: 3px;
 }
-#china:checked ~ .arrow,
-#inspiration:checked ~ .arrow,
-#culture:checked ~ .arrow,
-#science:checked ~ .arrow,
-#aroundWorld:checked ~ .arrow,
-#archive:checked ~ .arrow,
-#world:checked ~ .arrow,
-#russia:checked ~ .arrow,
-#moscow:checked ~ .arrow,
-#opinion:checked ~ .arrow,
-#fashion:checked ~ .arrow,
-#sport:checked ~ .arrow,
-#video:checked ~ .arrow,
-#health:checked ~ .arrow,
-#aboutAll:checked ~ .arrow {
+#china:checked ~ .imgLabel,
+#inspiration:checked ~ .imgLabel,
+#culture:checked ~ .imgLabel,
+#science:checked ~ .imgLabel,
+#aroundWorld:checked ~ .imgLabel,
+#archive:checked ~ .imgLabel,
+#world:checked ~ .imgLabel,
+#russia:checked ~ .imgLabel,
+#moscow:checked ~ .imgLabel,
+#opinion:checked ~ .imgLabel,
+#fashion:checked ~ .imgLabel,
+#sport:checked ~ .imgLabel,
+#video:checked ~ .imgLabel,
+#health:checked ~ .imgLabel,
+#aboutAll:checked ~ .imgLabel {
   transform: rotate(180deg);
 }
-.mainList label {
+/* .mainList label {
   display: inline-block;
-  width: 92%;
+  width: 6%;
   padding: 5px 0;
-}
-.mainList .arrow {
-  display: inline-block;
-  width: 3%;
-}
+  height: 20px;
+} */
+
 .subList li li {
   padding: 5px 0;
 }
@@ -226,7 +219,40 @@ i {
 .secList li {
   padding: 5px 0;
 }
-.archiveList li{
-  padding: 0 
+.archiveList li {
+  padding: 0;
 }
 
+.imgLabel {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+}
+
+.labelBox {
+  position: relative;
+  display: inline-block;
+  width: 6%;
+  z-index: 999;
+}
+.categorieLabel {
+  cursor: pointer;
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+.relLi{
+  position: relative;
+}
+.mainList .categoryName {
+  display: inline-block;
+  width: 92%;
+}
+.thirdLabel{
+  right: 15px;
+
+}
+.relLi .categoryName{
+  padding-bottom: 5px;
+}
